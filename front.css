@@ -1,3 +1,12 @@
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
 
 * {
     box-sizing: border-box;
@@ -7,7 +16,7 @@
 
   .btn {
     display: inline-block;
-    color: rgb(17, 16, 16);
+    color: rgb(245, 240, 240);
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     text-align: center;
@@ -30,7 +39,7 @@
   }
   body {
     font-family: "Open Sans", sans-serif;
-    background-color: whitesmoke;
+    background-color: #282828;
   }
   
   header {
@@ -42,7 +51,7 @@
     color: rgb(11, 228, 47);
     font-size: 1rem;
     font-weight: 300;
-    background-color: white;
+    background-color: #111111;
     outline-style: none!important;
     position: sticky;
     top: 0;
@@ -67,7 +76,7 @@
   }
   
   .navigation a {
-    color: black;
+    color: rgb(252, 247, 247);
     text-transform: uppercase;
     font-size: 14x;
     margin-left: 20px;
@@ -97,39 +106,44 @@
     justify-content: space-between;
     margin-bottom: 30px;
   }
+
   .sub-header .close-btn {
     font-size: 30px;
     color: green;
     cursor: pointer;
   }
+
   .sub-header .title {
     line-height: 1;
     font-size: 30px;
     text-transform: uppercase;
+    color: white;
   }
   .sub-header .title span {
     display: block;
     font-size: 12px;
     font-weight: 400;
     text-transform: lowercase;
-    color: black;
+    color: rgb(252, 244, 244);
   }
   
   .thumb-wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    color: #bbb;
   }
   
   .thumb-unit {
     width: 24%;
     margin: 0 0.5% 20px 0.5%;
     padding: 15px 20px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     transition: all ease-in-out 300ms;
   }
+
   .thumb-unit.is-active {
     border: none;
     box-shadow: 0px 3px 20px rgba(245, 240, 240, 0.4);
@@ -147,7 +161,7 @@
     box-shadow: 0px 3px 20px rgba(198, 8, 223, 0.4);
     transform: scale(1.1);
     z-index: 1000;
-    background: white;
+    background: rgb(41, 39, 39);
 
   
 
@@ -208,43 +222,10 @@
     font-weight: 700;
   }
   .thumb-unit .info .icon {
-    font-size: 20px;
+    font-size: 1rem;
     color: rgb(109, 128, 0);
   }
   
-  @media (max-width: 1200px) {
-    .thumb-unit {
-      width: 31.33%;
-      margin: 0px 0.5% 20px 0.5%;
-    }
-  }
-  @media (max-width: 640px) {
-    .thumb-unit {
-      width: 100%;
-      margin: 0 0 20px 0;
-    }
-  
-    .navigation {
-      display: none;
-    }
-  }
-  @keyframes tada {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-    10%, 20% {
-      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    }
-    30%, 50%, 70%, 90% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-    40%, 60%, 80% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-    to {
-      transform: scale3d(1, 1, 1);
-    }
-  }
     .site-footer
     {
       background-color:#26272b;
@@ -265,7 +246,7 @@
 .site-footer h6
 {
   color:#fff;
-  font-size:16px;
+  font-size: 1rem;
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
@@ -273,7 +254,7 @@
 .site-footer h7
 {
   color:#fff;
-  font-size:16px;
+  font-size: 1rem;
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
